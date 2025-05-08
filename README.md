@@ -1,4 +1,4 @@
-# What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
+# 1. What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
 
 Enums in TypeScript are a powerful feature that provides a way to define a set of named constants. They can be numeric or string-based, and it is easy to handle both types in TypeScript.
 
@@ -52,7 +52,7 @@ In the above example, the Days enum automatically assigns numeric values startin
 
 In the above example, the Color enum uses string values for each color. This makes the output much more readable and meaningful compared to numeric enums.
 
-# Provide an example of using union and intersection types in TypeScript.
+# 2. Provide an example of using union and intersection types in TypeScript.
 
 ## Union Types
 
