@@ -11,6 +11,7 @@ Enums in TypeScript are a powerful feature that provides a way to define a set o
 ## Numeric Enums Example:
 
 > enum Days {
+>
 > Monday, // 0
 >
 > Tuesday, // 1
@@ -28,6 +29,7 @@ Enums in TypeScript are a powerful feature that provides a way to define a set o
 > }
 >
 > let today: Days = Days.Monday;
+>
 > console.log(today); // Output: 0
 
 In the above example, the Days enum automatically assigns numeric values starting from 0 to each day of the week.
@@ -35,6 +37,7 @@ In the above example, the Days enum automatically assigns numeric values startin
 ## String Enums Example:
 
 > enum Color {
+>
 > Red = "RED",
 >
 > Green = "GREEN",
@@ -44,6 +47,7 @@ In the above example, the Days enum automatically assigns numeric values startin
 > }
 >
 > let favoriteColor: Color = Color.Green;
+>
 > console.log(favoriteColor); // Output: GREEN
 
 In the above example, the Color enum uses string values for each color. This makes the output much more readable and meaningful compared to numeric enums.
@@ -57,10 +61,13 @@ A union type allows a variable to hold more than one type. This means we can def
 ## Example: Union Type
 
 > function printId(id: number | string): void {
+>
 > console.log(`Your ID is: ${id}`);
+>
 > }
 >
 > printId(123); // Output: Your ID is: 123
+>
 > printId("ABC123"); // Output: Your ID is: ABC123
 
 In the above example, the printId function accepts either a number or a string as the parameter. The union type (number | string) allows flexibility while still providing type safety.
@@ -72,22 +79,33 @@ An intersection type combines multiple types into one. It is used when we want a
 ## Example: Intersection Type
 
 > interface Person {
+>
 > name: string;
+>
 > age: number;
+>
 > }
 >
 > interface Employee {
+>
 > jobTitle: string;
+>
 > department: string;
+>
 > }
 >
 > type EmployeeDetails = Person & Employee;
 >
 > const employee: EmployeeDetails = {
+>
 > name: "Shafayath Jamil",
+>
 > age: 26,
+>
 > jobTitle: "Software Developer",
+>
 > department: "Engineering"
+>
 > };
 >
 > console.log(employee);
